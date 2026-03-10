@@ -1,11 +1,11 @@
-document.getElementById("get-activity").addEventListener("click", function() {
-  const randomId = Math.floor(Math.random() * 200) + 1
+function getActivityIdea() {
+    fetch("https://apis.scrimba.com/bored/api/activity")
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("idea").textContent = data.activity
+            document.body.classList.add("fun")
+            document.getElementById("title").textContent = "🦾 HappyBot🦿"
+        })
+}
 
-  fetch(`https://jsonplaceholder.typicode.com/todos/${randomId}`)
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("activity").textContent = data.title
-      document.getElementById("title").textContent = "HappyBot"
-      document.querySelector("main").classList.add("fun")
-    })
-})
+document.getElementById("bored-button").addEventListener("click", getActivityIdea)
