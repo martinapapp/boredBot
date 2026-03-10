@@ -1,7 +1,6 @@
 # BoredBot
 
 ![JS Badge](https://img.shields.io/badge/Learning-JavaScript-yellow)
-![API Badge](https://img.shields.io/badge/API-Scrimba-blue)
 
 This is a project I built to practice working with APIs. I learned how to get data from a server and how to trigger DOM updates based on user interaction.
 
@@ -23,7 +22,7 @@ BoredBot is a simple activity generator designed to cure boredom. The main goal 
 - Use `fetch()` to pull random activity suggestions from an API.
 - Handle click events to trigger asynchronous network requests.
 - Dynamically update text content and toggle CSS classes to change the UI state.
-- It's currently hooked up to the Scrimba Bored API to simulate a real-time recommendation engine.
+- It's currently hooked up to with jsonplaceholder to simulate a real-time recommendation engine.
 
 
 ## Usage
@@ -60,14 +59,12 @@ I'm using Vite to make development faster. Here are the main scripts I use:
 |3|index.js| The logic for fetching activities and updating the DOM.|
 
 ### Build
-The app centers around an event listener on the activity button. When clicked, it fetches a single JSON object from the Bored API. I then update the textContent of the activity display and the title, while adding a "fun" class to the main element to trigger a visual change in the layout.
+The app centers around an event listener on the activity button. When clicked, it fetches a single JSON object from a jsonPlaceheolder. I then update the textContent of the activity display and the title, while adding a "fun" class to the main element to trigger a visual change in the layout.
 
 ## Contribution
 1. Found a bug? Open an issue and I'll try to fix it.
 2. Advice? If you have ideas for more "robotic" CSS animations, let me know!
 
-### Guideline
-I'm trying to keep this as "Vanilla" as possible—no frameworks allowed yet! I want to really understand the basics here.
 
 ## License
 Feel free to use this for your own practice!  **MIT**  License.
